@@ -1,0 +1,50 @@
+void setbranchaddress(){
+
+ fChain->SetBranchAddress("weight", &weight);
+  fChain->SetBranchAddress("run", &run);
+  fChain->SetBranchAddress("event", &event);
+  fChain->SetBranchAddress("rho", &rho);
+  fChain->SetBranchAddress("mass", &mass);
+  fChain->SetBranchAddress("Ele1Eta", &Ele1Eta);
+  fChain->SetBranchAddress("Ele1Pt", &Ele1Pt);
+  fChain->SetBranchAddress("Ele1Phi", &Ele1Phi);
+  fChain->SetBranchAddress("Ele1SCEta", &Ele1SCEta);
+  fChain->SetBranchAddress("Ele1SCPhi", &Ele1SCPhi);
+  fChain->SetBranchAddress("Ele1Energy", &Ele1Energy);
+  fChain->SetBranchAddress("Ele1EnergyRegression", &Ele1EnergyRegression);
+  fChain->SetBranchAddress("Ele1EnergyRegressionV0", &Ele1EnergyRegressionV0);
+  fChain->SetBranchAddress("Ele1EnergyRegressionV1", &Ele1EnergyRegressionV1);
+  fChain->SetBranchAddress("Ele1EnergyRegressionV2", &Ele1EnergyRegressionV2);
+  fChain->SetBranchAddress("Ele1EnergyRegressionErrorV0", &Ele1EnergyRegressionErrorV0);
+  fChain->SetBranchAddress("Ele1EnergyRegressionErrorV1", &Ele1EnergyRegressionErrorV1);
+  fChain->SetBranchAddress("Ele1EnergyRegressionErrorV2", &Ele1EnergyRegressionErrorV2);
+  fChain->SetBranchAddress("Ele1HZZICHEP2012IDMVA", &Ele1HZZICHEP2012IDMVA);
+  fChain->SetBranchAddress("Ele1PFIso04", &Ele1PFIso04);
+  fChain->SetBranchAddress("Ele1R9", &Ele1R9);
+  fChain->SetBranchAddress("Ele1PassLooseSimpleCuts", &Ele1PassLooseSimpleCuts);
+  fChain->SetBranchAddress("Ele1PassMediumSimpleCuts", &Ele1PassMediumSimpleCuts);
+  fChain->SetBranchAddress("Ele1PassTightSimpleCuts", &Ele1PassTightSimpleCuts);
+  fChain->SetBranchAddress("Ele1PassHZZICHEP2012", &Ele1PassHZZICHEP2012);
+  fChain->SetBranchAddress("Ele2Pt", &Ele2Pt);
+  fChain->SetBranchAddress("Ele2Eta", &Ele2Eta);
+  fChain->SetBranchAddress("Ele2Phi", &Ele2Phi);
+  fChain->SetBranchAddress("Ele2SCEt", &Ele2SCEt);
+  fChain->SetBranchAddress("Ele2SCEta", &Ele2SCEta);
+  fChain->SetBranchAddress("Ele2SCPhi", &Ele2SCPhi);
+  fChain->SetBranchAddress("Ele2Energy", &Ele2Energy);
+  fChain->SetBranchAddress("Ele2EnergyRegression", &Ele2EnergyRegression);
+  fChain->SetBranchAddress("Ele2EnergyRegressionV0", &Ele2EnergyRegressionV0);
+  fChain->SetBranchAddress("Ele2EnergyRegressionV1", &Ele2EnergyRegressionV1);
+  fChain->SetBranchAddress("Ele2EnergyRegressionV2", &Ele2EnergyRegressionV2);
+  fChain->SetBranchAddress("Ele2EnergyRegressionErrorV0", &Ele2EnergyRegressionErrorV0);
+  fChain->SetBranchAddress("Ele2EnergyRegressionErrorV1", &Ele2EnergyRegressionErrorV1);
+  fChain->SetBranchAddress("Ele2EnergyRegressionErrorV2", &Ele2EnergyRegressionErrorV2);
+  fChain->SetBranchAddress("Ele2HZZICHEP2012IDMVA", &Ele2HZZICHEP2012IDMVA);
+  fChain->SetBranchAddress("Ele2PFIso04", &Ele2PFIso04);
+  fChain->SetBranchAddress("Ele2R9", &Ele2R9);
+  fChain->SetBranchAddress("Ele2PassLooseSimpleCuts", &Ele2PassLooseSimpleCuts);
+  fChain->SetBranchAddress("Ele2PassMediumSimpleCuts", &Ele2PassMediumSimpleCuts);
+  fChain->SetBranchAddress("Ele2PassTightSimpleCuts", &Ele2PassTightSimpleCuts);
+  fChain->SetBranchAddress("Ele2PassHZZICHEP2012", &Ele2PassHZZICHEP2012);
+
+}

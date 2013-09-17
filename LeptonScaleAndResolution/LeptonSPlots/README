@@ -1,0 +1,38 @@
+1) In a CMSSW release download the MLFit:
+
+cvs co -d MLFit UserCode/mpierini/MLFit
+cd MLFit 
+make -f Makefile_CMS
+
+in this way a shared library will be created: workdir/libMLFit.so.
+This will have to be loaded in ROOT before doing fits etc.
+
+2) setup the code to do the fit to your fit variable.
+For example, for the Z->ee fits to make sPlots of ele ID variables:
+
+cvs co -d LeptonSPlots UserCode/CITHZZ/LeptonScaleAndResolution/LeptonSPlots
+
+3) Make the fit, and compute the sWeights. 
+For example with this macro, after loading RooLogon.C to setup libraries, etc.
+
+
+root -l RooLogon.C
+.L src/FitZElectronsData.cc
+FitZElectrons(0,0)
+PlotZElectrons(0,0)
+calcSWeight(0,0)
+
+(where 0,0 are the pt,eta bins in this example, see the automated script:
+runfits.py)
+
+this will create a ROOT file with the original variables in the tree
+with additional variables that are for the signal and background sweights
+
+4) do the plots for the NOT-fit variables to which you are interested 
+(eg. eleID variables) and compare with your simulation models, reading the 
+data tree with sPlots:
+Eg.: src/makeSPlots.cc
+
+
+
+

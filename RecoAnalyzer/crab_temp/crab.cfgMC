@@ -1,0 +1,39 @@
+[CRAB]
+jobtype = cmssw
+#scheduler = condor
+scheduler = CRAB_Scheduler
+
+[CMSSW]
+datasetpath=DataSetName
+pset=test.py
+
+events_per_job = EvtPerJOB
+total_number_of_events = -1
+
+### The output files produced by your application (comma separated list)
+output_file = analysis.maindataname.root
+
+[USER]
+## output is returned to your submission area
+return_data = 0
+
+## OR output is copied to castor via rfcp
+copy_data = 1
+
+storage_element=srm-cms.cern.ch
+storage_path=/srm/managerv2?SFN=/castor/cern.ch
+#user_remote_dir=/user/y/yangyong/data/Run2011A/V01-00-00/maindataname
+user_remote_dir= cern_castor_dir
+
+[GRID]
+rb = CERN
+##  Black and White Lists management:
+## By Storage
+se_black_list = T3_TW_NCU, T2_CN_Beijing, T2_TW_Taiwan
+#se_white_list = grid-srm.physik.rwth-aachen.de
+
+
+[CAF]
+### In case you want to select a specific LSF Queue: eg one longher that the default one
+#queue=cmscaf1nd 
+#resource=cmscaf

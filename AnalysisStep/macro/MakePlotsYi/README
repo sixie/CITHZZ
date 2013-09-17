@@ -1,0 +1,20 @@
+Right now it's not very user friendly.  To run the program, first link the root files here:
+
+ln -s /path/to/7TeV/MC/root/files 7TeV
+ln -s /path/to/8TeV/MC/root/files 8TeV
+ln -s /path/to/7TeV/Data/root/file hcp7.root
+ln -s /path/to/8TeV/Data/root/file hcp8.root
+
+Then compile and run stuff:
+
+sh compile.sh
+sh BasicRunAll.sh
+cd Plotting
+./Run
+
+During the first step, a bunch a histograms will be produced for each file,
+which are then combined and copied into the plotting directory, where
+we combine things and make the final plots.
+
+
+
